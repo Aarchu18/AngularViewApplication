@@ -1,0 +1,28 @@
+<h1>Students Details</h1>
+
+<!--<p>This component demonstrates fetching data from the server.</p>
+
+<p *ngIf="!forecasts"><em>Loading...</em></p>-->
+
+<table class='table' *ngIf="studentDetails">
+  <thead>
+    <tr>
+      <th>Student Id</th>
+      <th>Student Name</th>
+      <th>Student Class</th>
+      <th>Student Age</th>
+      <th>Student Fees</th>
+     <th>Transaction Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let student of studentDetails">
+      <td>{{ student.studentId }}</td>
+      <td>{{student. studentName }}</td>
+      <td>{{ student.studentClass }}</td>
+      <td>{{ student.studentAge }}</td>
+      <td>{{ student.studentFees }}</td>
+      <td>{{ student.trasactionDate }}</td>
+    </tr>
+  </tbody>
+</table>
